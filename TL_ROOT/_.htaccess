@@ -1,0 +1,4 @@
+##
+# Double-opt-in / Newsletter subscription activation
+##
+RewriteRule a/(.+) /_subscription_activation.php?a=confirm&token=$1 [R=301,L]

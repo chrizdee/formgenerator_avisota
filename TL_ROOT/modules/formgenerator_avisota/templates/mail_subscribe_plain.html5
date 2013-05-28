@@ -1,0 +1,1 @@
+Click here to activate your subscription <?php echo $this->link ?>
