@@ -16,3 +16,7 @@ formgenerator_avisota
 * Einstellungen in _subscription_activation.php anpassen
 
 * E-Mail-Templates anpassen (optional)
+
+* Auf der Weiterleitungsseite des Formular folgenden Inserttag einfügen, um Fehlermeldungen (z.B. Benutzer bereits in Verteilerliste vorhanden) auszugeben:
+
+    {{fga::message}}

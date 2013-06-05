@@ -2,5 +2,6 @@
 
 // Register hooks
 $GLOBALS['TL_HOOKS']['processFormData'][] = array('formgeneratorAvisota', 'sendDoubleOptInMail');
+$GLOBALS['TL_HOOKS']['replaceInsertTags'][] = array('formgeneratorAvisota', 'replaceInsertTags');
 
 ?>
