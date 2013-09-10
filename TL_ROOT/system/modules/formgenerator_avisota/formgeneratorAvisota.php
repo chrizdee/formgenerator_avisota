@@ -28,7 +28,7 @@ class formgeneratorAvisota extends Frontend
   		if ($arrPost['newsletter_signup'] && $arrPost['email'])
   		{
   			// Check, if recipient already exists
-  			foreach ($arrPost['newsletter_signup'] as $pid) 
+  			foreach (is_array($arrPost['newsletter_signup']) || is_object($arrPost['newsletter_signup']) ? $arrPost['newsletter_signup'] : array() as $pid)
 			{
 	  			$sql = 'SELECT id 
 						FROM tl_avisota_recipient 
@@ -84,7 +84,7 @@ class formgeneratorAvisota extends Frontend
 				$objEmail->from = $objRoot->adminEmail;
 				$objEmail->sendTo($arrPost['email']);
 
-				foreach ($arrPost['newsletter_signup'] as $pid) 
+				foreach (is_array($arrPost['newsletter_signup']) || is_object($arrPost['newsletter_signup']) ? $arrPost['newsletter_signup'] : array() as $pid) 
 				{
 					if (!$list[$pid])
 					{
