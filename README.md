@@ -20,3 +20,8 @@ formgenerator_avisota
 * Auf der Weiterleitungsseite des Formular folgenden Inserttag einfügen, um Fehlermeldungen (z.B. Benutzer bereits in Verteilerliste vorhanden) auszugeben:
 
     {{fga::message}}
+
+License
+-------
+
+It is licensed under the terms of the LGPLv3.
